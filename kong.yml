@@ -22,6 +22,7 @@ consumers:
   basicauth_credentials:
   - username: Rafirafi
     password: Rafi123
+
   
 plugins:
 - name: basic-auth
@@ -54,6 +55,10 @@ plugins:
     block_on_first_violation: false
     fault_tolerant: true
     hide_client_headers: false
+- name: request-termination
+  config: 
+    status_code: 403
+    message: This API is under maintenance!
 
 
 
