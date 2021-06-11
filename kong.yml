@@ -55,6 +55,12 @@ plugins:
     block_on_first_violation: false
     fault_tolerant: true
     hide_client_headers: false
+
+- name: session
+  config:
+    storage: kong
+    cookie_secure: false
+    
 - name: request-termination
   config: 
     status_code: 403
