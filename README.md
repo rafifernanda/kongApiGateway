@@ -7,3 +7,4 @@ Plugin :
 - Rate-Limiting
 - Respond-Rate Limiting
 - Request Termination
+- Session
